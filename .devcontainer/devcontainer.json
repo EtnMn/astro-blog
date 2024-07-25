@@ -1,0 +1,23 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "Astro blog project",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"forwardPorts": [
+		4321
+	],
+	"remoteUser": "node",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/netlify-cli:1": {},
+		"ghcr.io/devcontainers-contrib/features/pnpm:2": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"astro-build.astro-vscode",
+				"VisualStudioExptTeam.vscodeintellicode"
+			]
+		}
+	}
+}
